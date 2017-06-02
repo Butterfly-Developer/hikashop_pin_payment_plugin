@@ -1,0 +1,20 @@
+.pin-form-field {
+    height: 2em;
+    width: 50%;
+    border: 1px solid black;
+    padding: 0 0.5em;
+}
+
+.plg_hikashoppayment_pin {
+    min-height: 15em;
+}
+
+.plg_hikashoppayment_pin + .hikashop_checkout_payment_submit {
+    display: none;
+}
+
+.plg_hikashoppayment_pin_spinner {
+    position: absolute;
+    padding: 10px;
+    z-index: 99;
+}

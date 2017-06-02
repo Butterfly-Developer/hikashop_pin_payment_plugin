@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="hikashoppayment">
+    <name>Hikashop Pin Payment Plugin</name>
+    <creationDate>2017</creationDate>
+    <version>1.0.0</version>
+    <author>Butterfly</author>
+    <authorEmail>info@butterfly.com.au</authorEmail>
+    <authorUrl>http://www.butterfly.com.au</authorUrl>
+    <copyright>(C) 2017 All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>This plugin enables you to setup pin payments</description>
+    <files>
+        <filename plugin="pin">pin.php</filename>
+        <folder>assets</folder>
+        <folder>libraries</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_hikashoppayment_pin.ini</language>
+        <language tag="en-GB">en-GB.plg_hikashoppayment_pin.sys.ini</language>
+    </languages>
+    <params addpath="/components/com_hikashop/params">
+        <param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+    </params>
+    <config>
+        <fields name="params" addfieldpath="/components/com_hikashop/fields">
+            <fieldset name="basic">
+                <field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop" description="HikaShop options" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
